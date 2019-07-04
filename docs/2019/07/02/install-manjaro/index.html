@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/FrontEndClubIsBook/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/FrontEndClubIsBook/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/FrontEndClubIsBook/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/FrontEndClubIsBook/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/FrontEndClubIsBook/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/FrontEndClubIsBook/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/FrontEndClubIsBook/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/FrontEndClubIsBook/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/FrontEndClubIsBook/',
+    scheme: 'Mist',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Manjaro到底有多受欢迎? DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统（如OpenSolaris、MINIX及BSD等）的新闻、人气排名、以及其他一般信息等的网站。它包含了数百种发行版的信息原文链接: https://distrowatch.com/table.php?distribution=manjaro">
+<meta name="keywords" content="Linux,Manjaro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最受欢迎的Linux发行版, Manjaro折腾全记录（超长超详细）">
+<meta property="og:url" content="http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/02/install-manjaro/index.html">
+<meta property="og:site_name" content="前端娱乐圈是本书">
+<meta property="og:description" content="Manjaro到底有多受欢迎? DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统（如OpenSolaris、MINIX及BSD等）的新闻、人气排名、以及其他一般信息等的网站。它包含了数百种发行版的信息原文链接: https://distrowatch.com/table.php?distribution=manjaro">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4cece7374c806c4f3aa108c42604de51.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/3a527a73261675fc70f6548d8bf524bf.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c53451572f2da24588bab741d0bce7c9.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/7bbaf473ce556990a02f7171cd7b128b.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/9c87bd6537179a15da38994c3a9abc5c.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/da38e0e6a0a1c4437089cc3cca724675.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/6b20f7f4865ee2dfb462a4310cb9c8c1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/7b70856d934107dbc954f978be926478.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/9126eced118709501180786f4eff404d.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/f23ef24aedfb13dfaa770e6073551cb0.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c7dd54e0665dabe271533ebbbadf9de5.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/45504ecd3931619db709492b4eb968bd.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/1ecd14bb57ba22af27b5f3468b4e8f0a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/1d0da7c6ef5a667cd5f66fe470f0751b.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/99218666f8c9fec4808eb0ca98643346.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4801a522b5c584bca2a7b03a0ce72613.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/3a0b52657e1ce117cdd80edce66a082a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/84c304fb0180f2d4c911d0ac2b867c5a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/9c424b52d808c9c9925e61186a030e0e.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2ef3aca13d05e98f8fa923fa3c2dbca3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/08100ce4d10f92a2aceb434f6dc6c53b.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4321ba89eb14757e5e858cab0be7efe6.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/079cc163782fbcb8fa2a26fd7e3fb747.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/f29e66da2aeebdfc9517d2bd8e6f8b01.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c6f843a70a14a991b99d7383ee3e0b3a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/811020451d93aa08b57d5d9e9fd41e10.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/62fb3640d10d619118eda4418271b27a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/a93ccc8dd6088642c32a1b7681d7ba08.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/171dfd22655b121b1ab4370419474f00.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c7a13808e259929fa6d6b14f687f5673.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2398246a75608965565acd5606367b05.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/91828701348b1d7c30e5200ef5da120a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/03668ecbcd7fc2c576b58cd7019026e2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/6fa3870e158df73e81d55c1644107bbe.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/dfa26fd99824d8c10fb157bd78b9f5d0.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/97d993a9444ed7737280236b9d57e3b6.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/79b513194cd5d0b530f4192a4c74c1df.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2b220580b6b2fc9c6a21056f80d36c2e.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/41f9b0173402a331c6e98395f1f72773.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c511bb719685c0f09ffb7a20f57491c8.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/70d974cbc3da7e20f9c391086cc101b2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/6c089187c4eb4a52c387ddde7533b566.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/b2017c373abc39f27c01d5e753e20b75.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/11f0f5aae1e771ace79b591794b9a39f.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/f143434466b7cafa9642fb9671059ba4.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/16d63692118483abfacf0576447b4a0e.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/27367226306be2a7837b5b68467bd824.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/573dfb4e06efc94de0393c39a9025ed1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/bf3e54467a3db6524ed0d036b5753f53.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/fe98671864d9eb9a517785ccb481e816.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/b1d2dfbc6feb5ac0765d1c0b01f78eb0.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/967f9994ab457ef37cb443dbbe20f0d8.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/bd444f15b8a0d5d460a024ab141e4f24.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/a16100286a9f67cb14a70a0454c3bdc7.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/58ef479b165d7a0f104da579c4e41d48.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/1f685976074f02fa0d2fc9a9dc304ca3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/a011d357aa81f35b9287d2680548efa5.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/07d8ce4d2010775a65f11207543134ef.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2052ea3e4d4e5242d838d06efe3bfd6d.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c20001ae02542e81056a51997e950693.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/211f83682ad98d62b7cf754b49a73397.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/8ab009d07eec507eb86c81643c048863.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/7e363728375bb6fc33e102942c5c964e.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/95f7decef565454461a73fbc534b1344.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/eea5cf2171e517a45af59f8bb149152d.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/78fe6e13e1c620246913176426e4293a.png">
+<meta property="og:updated_time" content="2019-07-03T00:44:29.412Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="最受欢迎的Linux发行版, Manjaro折腾全记录（超长超详细）">
+<meta name="twitter:description" content="Manjaro到底有多受欢迎? DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统（如OpenSolaris、MINIX及BSD等）的新闻、人气排名、以及其他一般信息等的网站。它包含了数百种发行版的信息原文链接: https://distrowatch.com/table.php?distribution=manjaro">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4cece7374c806c4f3aa108c42604de51.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/02/install-manjaro/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>最受欢迎的Linux发行版, Manjaro折腾全记录（超长超详细） | 前端娱乐圈是本书</title>
+  
+
+
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?06e2f2a37e405b47f1c995e373094ae1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/FrontEndClubIsBook/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">前端娱乐圈是本书</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">zhaoolee 木子昭 前端娱乐圈是本书</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/FrontEndClubIsBook/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/FrontEndClubIsBook/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/FrontEndClubIsBook/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/FrontEndClubIsBook/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/FrontEndClubIsBook/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<script src="/GBlog/live2d-widget-master/autoload.js"></script>
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhaoolee.github.io/FrontEndClubIsBook/FrontEndClubIsBook/2019/07/02/install-manjaro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhaoolee">
+      <meta itemprop="description" content="前端娱乐圈是本书, 在前端圈寻欢作乐">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/15868458?s=460&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="前端娱乐圈是本书">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">最受欢迎的Linux发行版, Manjaro折腾全记录（超长超详细）
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-02 16:39:06" itemprop="dateCreated datePublished" datetime="2019-07-02T16:39:06+08:00">2019-07-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-03 08:44:29" itemprop="dateModified" datetime="2019-07-03T08:44:29+08:00">2019-07-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/FrontEndClubIsBook/categories/Linux老司机/" itemprop="url" rel="index"><span itemprop="name">Linux老司机</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4cece7374c806c4f3aa108c42604de51.png" alt></p>
+</blockquote>
+<h2 id="Manjaro到底有多受欢迎"><a href="#Manjaro到底有多受欢迎" class="headerlink" title="Manjaro到底有多受欢迎?"></a>Manjaro到底有多受欢迎?</h2><blockquote>
+<p>DistroWatch是一个包含了各种Linux发行版及其他自由/开放源代码的类Unix操作系统（如OpenSolaris、MINIX及BSD等）的新闻、人气排名、以及其他一般信息等的网站。它包含了数百种发行版的信息<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/3a527a73261675fc70f6548d8bf524bf.png" alt><br>原文链接: <a href="https://distrowatch.com/table.php?distribution=manjaro" target="_blank" rel="noopener">https://distrowatch.com/table.php?distribution=manjaro</a></p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="获取manjaro"><a href="#获取manjaro" class="headerlink" title="获取manjaro"></a>获取manjaro</h2><ul>
+<li>进入官网获取镜像 <a href="https://manjaro.org/download/" target="_blank" rel="noopener">https://manjaro.org/download/</a><blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c53451572f2da24588bab741d0bce7c9.png" alt><br>镜像下载地址:<a href="https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-stable-x86_64.iso" target="_blank" rel="noopener">https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-stable-x86_64.iso</a><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/7bbaf473ce556990a02f7171cd7b128b.png" alt></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="在vmware中安装manjaro"><a href="#在vmware中安装manjaro" class="headerlink" title="在vmware中安装manjaro"></a>在vmware中安装manjaro</h2><ul>
+<li><p>选择镜像</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/9c87bd6537179a15da38994c3a9abc5c.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/da38e0e6a0a1c4437089cc3cca724675.png" alt></p>
+</blockquote>
+</li>
+<li><p>配置虚拟机</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/6b20f7f4865ee2dfb462a4310cb9c8c1.png" alt></p>
+</blockquote>
+</li>
+<li><p>BIOS启动</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/7b70856d934107dbc954f978be926478.png" alt></p>
+</blockquote>
+</li>
+<li><p>自定义配置</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/9126eced118709501180786f4eff404d.png" alt></p>
+</blockquote>
+</li>
+<li><p>硬盘推荐50G或更大</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/f23ef24aedfb13dfaa770e6073551cb0.png" alt></p>
+</blockquote>
+</li>
+<li><p>内存4G</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c7dd54e0665dabe271533ebbbadf9de5.png" alt></p>
+</blockquote>
+</li>
+<li><p>开机</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/45504ecd3931619db709492b4eb968bd.png" alt="image.png"></p>
+</blockquote>
+</li>
+<li><p>等待</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/1ecd14bb57ba22af27b5f3468b4e8f0a.png" alt></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/1d0da7c6ef5a667cd5f66fe470f0751b.png" alt></p>
+<ul>
+<li>选择中文<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/99218666f8c9fec4808eb0ca98643346.png" alt></li>
+<li>启动安装程序<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4801a522b5c584bca2a7b03a0ce72613.png" alt></li>
+<li>选择语言<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/3a0b52657e1ce117cdd80edce66a082a.png" alt></li>
+<li>选择上海, 下一步<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/84c304fb0180f2d4c911d0ac2b867c5a.png" alt></li>
+<li>下一步<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/9c424b52d808c9c9925e61186a030e0e.png" alt></li>
+<li>抹除磁盘,下一步<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2ef3aca13d05e98f8fa923fa3c2dbca3.png" alt></li>
+<li>创建用户<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/08100ce4d10f92a2aceb434f6dc6c53b.png" alt></li>
+<li>确认信息, 开始正式安装<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/4321ba89eb14757e5e858cab0be7efe6.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/079cc163782fbcb8fa2a26fd7e3fb747.png" alt></li>
+<li>等待安装过程<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/f29e66da2aeebdfc9517d2bd8e6f8b01.png" alt></li>
+<li>完成安装<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c6f843a70a14a991b99d7383ee3e0b3a.png" alt></li>
+<li>重启后, 安装完成<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/811020451d93aa08b57d5d9e9fd41e10.png" alt></li>
+</ul>
+</blockquote>
+<h2 id="将终端添加到桌面"><a href="#将终端添加到桌面" class="headerlink" title="将终端添加到桌面"></a>将终端添加到桌面</h2><blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/62fb3640d10d619118eda4418271b27a.png" alt></p>
+</blockquote>
+<h2 id="双击打开桌面的终端-查看manjaro信息"><a href="#双击打开桌面的终端-查看manjaro信息" class="headerlink" title="双击打开桌面的终端,查看manjaro信息"></a>双击打开桌面的终端,查看manjaro信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screenfetch</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/a93ccc8dd6088642c32a1b7681d7ba08.png" alt></p>
+</blockquote>
+<hr>
+<p>现在我们还不能实现虚拟机与物理机共享粘贴板, 这里需要安装vmware-tools</p>
+<h2 id="安装-vmtool"><a href="#安装-vmtool" class="headerlink" title="安装 vmtool"></a>安装 vmtool</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -R open-vm-tools</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/171dfd22655b121b1ab4370419474f00.png" alt></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/rasa/vmware-tools-patches.git</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c7a13808e259929fa6d6b14f687f5673.png" alt></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd vmware-tools-patches</span><br><span class="line">sudo ./patched-open-vm-tools.sh</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2398246a75608965565acd5606367b05.png" alt></p>
+</blockquote>
+<h2 id="现在就可以愉快和物理机共享粘贴板了-下面的各种安装命令-都可以直接复制粘贴到虚拟机运行"><a href="#现在就可以愉快和物理机共享粘贴板了-下面的各种安装命令-都可以直接复制粘贴到虚拟机运行" class="headerlink" title="现在就可以愉快和物理机共享粘贴板了! 下面的各种安装命令, 都可以直接复制粘贴到虚拟机运行!"></a>现在就可以愉快和物理机共享粘贴板了! 下面的各种安装命令, 都可以直接复制粘贴到虚拟机运行!</h2><p>我们可以试着将<code>sudo pacman -S vim</code>, 粘贴到虚拟机, 安装编辑器之神vim到我们的虚拟机</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/91828701348b1d7c30e5200ef5da120a.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/03668ecbcd7fc2c576b58cd7019026e2.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/6fa3870e158df73e81d55c1644107bbe.png" alt></p>
+</blockquote>
+<h2 id="更换为为中科大arch软件源sudo-vim-etc-pacman-conf"><a href="#更换为为中科大arch软件源sudo-vim-etc-pacman-conf" class="headerlink" title="更换为为中科大arch软件源sudo vim /etc/pacman.conf"></a>更换为为中科大arch软件源<code>sudo vim /etc/pacman.conf</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel = Optional TrustedOnly</span><br><span class="line">Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/dfa26fd99824d8c10fb157bd78b9f5d0.png" alt></p>
+</blockquote>
+<ul>
+<li>更新软件源<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Syy &amp;&amp; sudo pacman -S archlinuxcn-keyring</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/97d993a9444ed7737280236b9d57e3b6.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/79b513194cd5d0b530f4192a4c74c1df.png" alt></p>
+</blockquote>
+<h2 id="常用pacman命令"><a href="#常用pacman命令" class="headerlink" title="常用pacman命令"></a>常用pacman命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pacman -S  软件名   #安装</span><br><span class="line">pacman -Syu    #更新</span><br><span class="line">pacman -R 软件名    #移除</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>开始装软件</p>
+<h2 id="安装chrome"><a href="#安装chrome" class="headerlink" title="安装chrome"></a>安装chrome</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S google-chrome</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2b220580b6b2fc9c6a21056f80d36c2e.png" alt></p>
+<ul>
+<li>将浏览器发送到桌面<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/41f9b0173402a331c6e98395f1f72773.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c511bb719685c0f09ffb7a20f57491c8.png" alt></li>
+</ul>
+</blockquote>
+<h2 id="安装截图"><a href="#安装截图" class="headerlink" title="安装截图"></a>安装截图</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S deepin-screenshot</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/70d974cbc3da7e20f9c391086cc101b2.png" alt></p>
+</blockquote>
+<h2 id="安装TIM"><a href="#安装TIM" class="headerlink" title="安装TIM"></a>安装TIM</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S deepin-wine-tim</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/6c089187c4eb4a52c387ddde7533b566.png" alt></p>
+</blockquote>
+<h2 id="安装网易云音乐"><a href="#安装网易云音乐" class="headerlink" title="安装网易云音乐"></a>安装网易云音乐</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S netease-cloud-music</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/b2017c373abc39f27c01d5e753e20b75.png" alt></p>
+</blockquote>
+<h2 id="网易云命令行版-github开源项目"><a href="#网易云命令行版-github开源项目" class="headerlink" title="网易云命令行版(github开源项目)"></a>网易云命令行版(github开源项目)</h2><ul>
+<li>高品质网易云音乐命令行版本，简洁优雅，丝般顺滑，基于Python编写</li>
+<li><a href="https://github.com/darknessomi/musicbox" target="_blank" rel="noopener">开源地址</a></li>
+<li><a href="https://github.com/darknessomi/musicbox/blob/master/README.md#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE" target="_blank" rel="noopener">使用说明</a><blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/11f0f5aae1e771ace79b591794b9a39f.png" alt></p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S yaourt</span><br><span class="line">yaourt musicbox</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/f143434466b7cafa9642fb9671059ba4.png" alt></p>
+</blockquote>
+<h2 id="安装搜狗输入法"><a href="#安装搜狗输入法" class="headerlink" title="安装搜狗输入法"></a>安装搜狗输入法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx-im</span><br><span class="line">sudo pacman -S fcitx-configtool</span><br><span class="line">sudo pacman -S fcitx-sogoupinyin</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>添加输入法配置文件 <code>sudo vim ~/.xprofile</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export GTK_IM_MODULE=fcitx</span><br><span class="line">export QT_IM_MODULE=fcitx</span><br><span class="line">export XMODIFIERS=&quot;@im=fcitx&quot;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/16d63692118483abfacf0576447b4a0e.png" alt></p>
+</blockquote>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/27367226306be2a7837b5b68467bd824.png" alt></p>
+</blockquote>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/573dfb4e06efc94de0393c39a9025ed1.png" alt><br>为了让输入法生效,需要重启一下</p>
+</blockquote>
+<h2 id="安装markdown编辑器"><a href="#安装markdown编辑器" class="headerlink" title="安装markdown编辑器"></a>安装markdown编辑器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yaourt typora</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/bf3e54467a3db6524ed0d036b5753f53.png" alt></p>
+</blockquote>
+<h2 id="安装pdf阅读器"><a href="#安装pdf阅读器" class="headerlink" title="安装pdf阅读器"></a>安装pdf阅读器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yaourt foxit</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/fe98671864d9eb9a517785ccb481e816.png" alt></p>
+</blockquote>
+<h2 id="开启steam"><a href="#开启steam" class="headerlink" title="开启steam"></a>开启steam</h2><blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/b1d2dfbc6feb5ac0765d1c0b01f78eb0.png" alt></p>
+</blockquote>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/967f9994ab457ef37cb443dbbe20f0d8.png" alt></p>
+<ul>
+<li>steam是自带软件, 如果启动不成功, 可以补一个包steam-native-runtime</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S steam-native-runtime</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装git客户端"><a href="#安装git客户端" class="headerlink" title="安装git客户端"></a>安装git客户端</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yaourt GitKraken</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/bd444f15b8a0d5d460a024ab141e4f24.png" alt></p>
+</blockquote>
+<h2 id="安装下载工具-uget"><a href="#安装下载工具-uget" class="headerlink" title="安装下载工具 uget"></a>安装下载工具 uget</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yaourt -S uget</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/a16100286a9f67cb14a70a0454c3bdc7.png" alt></p>
+</blockquote>
+<h2 id="安装视频播放器"><a href="#安装视频播放器" class="headerlink" title="安装视频播放器"></a>安装视频播放器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yaourt -S mpv</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/58ef479b165d7a0f104da579c4e41d48.png" alt></p>
+</blockquote>
+<h2 id="安装zsh"><a href="#安装zsh" class="headerlink" title="安装zsh"></a>安装zsh</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#最新版本已经默认安装了。</span><br><span class="line">sudo pacman -S zsh</span><br><span class="line"># 安装oh-my-zsh</span><br><span class="line">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</span><br><span class="line"># 更换默认的shell</span><br><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/1f685976074f02fa0d2fc9a9dc304ca3.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/a011d357aa81f35b9287d2680548efa5.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/07d8ce4d2010775a65f11207543134ef.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/2052ea3e4d4e5242d838d06efe3bfd6d.png" alt></p>
+</blockquote>
+<h2 id="让终端更好用"><a href="#让终端更好用" class="headerlink" title="让终端更好用"></a>让终端更好用</h2><ul>
+<li>调整字体字号<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/c20001ae02542e81056a51997e950693.png" alt="image.png"></p>
+</blockquote>
+</li>
+<li>直接粘贴命令<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/211f83682ad98d62b7cf754b49a73397.png" alt></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="来点扩展-添加部件"><a href="#来点扩展-添加部件" class="headerlink" title="来点扩展(添加部件)"></a>来点扩展(添加部件)</h2><blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/8ab009d07eec507eb86c81643c048863.png" alt></p>
+</blockquote>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/7e363728375bb6fc33e102942c5c964e.png" alt></p>
+</blockquote>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/95f7decef565454461a73fbc534b1344.png" alt></p>
+<ul>
+<li>组件: 应用程序面板<br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/eea5cf2171e517a45af59f8bb149152d.png" alt><br><img src="https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000000/78fe6e13e1c620246913176426e4293a.png" alt></li>
+</ul>
+</blockquote>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结:"></a>小结:</h2><ul>
+<li>manjaro基于大名鼎鼎的arch, 拥有最为丰富的软件源, 界面UI简洁大方</li>
+<li>manjaro的系统动画非常流畅, 不像ubuntu那样卡顿, 显卡驱动也是一键安装</li>
+<li>manjaro本身也有好几个版本, 上文是基于KDE版本的, 也就是界面最复杂的版本, 其它版本安装软件会更简单一些, 如果你喜欢折腾, 就不要错过manjaro, 当然如果你对manjaro背后的arch感兴趣, 可以参考这一篇<a href="https://www.jianshu.com/p/3d3da6b930a1" target="_blank" rel="noopener">https://www.jianshu.com/p/3d3da6b930a1</a></li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/FrontEndClubIsBook/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/FrontEndClubIsBook/tags/Manjaro/" rel="tag"># Manjaro</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/FrontEndClubIsBook/2019/07/02/install-kali/" rel="next" title="安装kali虚拟机">
+                <i class="fa fa-chevron-left"></i> 安装kali虚拟机
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/FrontEndClubIsBook/2019/07/02/spider-douban/" rel="prev" title="《进击的虫师》爬取豆瓣电影海报(Top250)">
+                《进击的虫师》爬取豆瓣电影海报(Top250) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://avatars2.githubusercontent.com/u/15868458?s=460&v=4" alt="zhaoolee">
+            
+              <p class="site-author-name" itemprop="name">zhaoolee</p>
+              <div class="site-description motion-element" itemprop="description">前端娱乐圈是本书, 在前端圈寻欢作乐</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/FrontEndClubIsBook/archives">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/FrontEndClubIsBook/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/FrontEndClubIsBook/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/zhaoolee" title="GitHub &rarr; https://github.com/zhaoolee" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:zhaoolee@gmail.com" title="E-Mail &rarr; mailto:zhaoolee@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Manjaro到底有多受欢迎"><span class="nav-number">1.</span> <span class="nav-text">Manjaro到底有多受欢迎?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取manjaro"><span class="nav-number">2.</span> <span class="nav-text">获取manjaro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在vmware中安装manjaro"><span class="nav-number">3.</span> <span class="nav-text">在vmware中安装manjaro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将终端添加到桌面"><span class="nav-number">4.</span> <span class="nav-text">将终端添加到桌面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双击打开桌面的终端-查看manjaro信息"><span class="nav-number">5.</span> <span class="nav-text">双击打开桌面的终端,查看manjaro信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-vmtool"><span class="nav-number">6.</span> <span class="nav-text">安装 vmtool</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现在就可以愉快和物理机共享粘贴板了-下面的各种安装命令-都可以直接复制粘贴到虚拟机运行"><span class="nav-number">7.</span> <span class="nav-text">现在就可以愉快和物理机共享粘贴板了! 下面的各种安装命令, 都可以直接复制粘贴到虚拟机运行!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换为为中科大arch软件源sudo-vim-etc-pacman-conf"><span class="nav-number">8.</span> <span class="nav-text">更换为为中科大arch软件源sudo vim /etc/pacman.conf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用pacman命令"><span class="nav-number">9.</span> <span class="nav-text">常用pacman命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装chrome"><span class="nav-number">10.</span> <span class="nav-text">安装chrome</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装截图"><span class="nav-number">11.</span> <span class="nav-text">安装截图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装TIM"><span class="nav-number">12.</span> <span class="nav-text">安装TIM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装网易云音乐"><span class="nav-number">13.</span> <span class="nav-text">安装网易云音乐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云命令行版-github开源项目"><span class="nav-number">14.</span> <span class="nav-text">网易云命令行版(github开源项目)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装搜狗输入法"><span class="nav-number">15.</span> <span class="nav-text">安装搜狗输入法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装markdown编辑器"><span class="nav-number">16.</span> <span class="nav-text">安装markdown编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装pdf阅读器"><span class="nav-number">17.</span> <span class="nav-text">安装pdf阅读器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启steam"><span class="nav-number">18.</span> <span class="nav-text">开启steam</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装git客户端"><span class="nav-number">19.</span> <span class="nav-text">安装git客户端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装下载工具-uget"><span class="nav-number">20.</span> <span class="nav-text">安装下载工具 uget</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装视频播放器"><span class="nav-number">21.</span> <span class="nav-text">安装视频播放器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装zsh"><span class="nav-number">22.</span> <span class="nav-text">安装zsh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#让终端更好用"><span class="nav-number">23.</span> <span class="nav-text">让终端更好用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#来点扩展-添加部件"><span class="nav-number">24.</span> <span class="nav-text">来点扩展(添加部件)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">25.</span> <span class="nav-text">小结:</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhaoolee</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+    
+  
+  <script color="255,255,255" opacity="0.3" zindex="-1" count="10" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="//cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script>
+
+  
+  <script src="/FrontEndClubIsBook/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/FrontEndClubIsBook/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/FrontEndClubIsBook/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/FrontEndClubIsBook/js/utils.js?v=7.1.2"></script>
+
+  <script src="/FrontEndClubIsBook/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/FrontEndClubIsBook/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/FrontEndClubIsBook/js/scrollspy.js?v=7.1.2"></script>
+<script src="/FrontEndClubIsBook/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/FrontEndClubIsBook/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'fcfeca14739ad63b029c',
+    clientSecret: '191c171c5954a566e184f8a22b2c7a4b0b224759',
+    repo: 'FrontEndClubIsBook',
+    owner: 'zhaoolee',
+    admin: ['zhaoolee'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN',
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/FrontEndClubIsBook/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script>
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+  
+
+</body>
+</html>
