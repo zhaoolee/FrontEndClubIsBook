@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/04/moyu/</loc>
+    
+    <lastmod>2019-07-04T01:51:31.589Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/04/dev-artifact/</loc>
     
     <lastmod>2019-07-04T01:47:29.802Z</lastmod>
@@ -65,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/live2d-widget-master/demo/demo2.html</loc>
+    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/live2d-widget-master/demo/demo1.html</loc>
     
     <lastmod>2019-06-12T15:42:06.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/live2d-widget-master/demo/demo1.html</loc>
+    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/live2d-widget-master/demo/demo2.html</loc>
     
     <lastmod>2019-06-12T15:42:06.000Z</lastmod>
     
