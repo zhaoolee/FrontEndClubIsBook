@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[推荐的开源书籍]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fopen-source-books%2F</url>
+    <content type="text"><![CDATA[ECMAScript 6 入门在线阅读地址: https://es6.ruanyifeng.com/]]></content>
+      <categories>
+        <category>推荐的开源书籍</category>
+      </categories>
+      <tags>
+        <tag>开源书籍</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[一图胜千言]]></title>
     <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fa-picture-worth-thousand-words%2F</url>
     <content type="text"><![CDATA[]]></content>
