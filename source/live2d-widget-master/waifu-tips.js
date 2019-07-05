@@ -24,9 +24,10 @@ console.log(`
  */
 
 function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
-	if ((screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000))) {
-		return;
-	}
+	// if ((screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000))) {
+    
+  //   return;
+	// }
 	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
 	$("body").append(`<div id="waifu">
