@@ -1,58 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[可以摸鱼的网站]]></title>
-    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fmoyu%2F</url>
+    <title><![CDATA[《可以摸鱼的网站》 (蒸羊羔)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0001-moyu%2F</url>
     <content type="text"><![CDATA[掘金掘金上班摸鱼专题 GithubGithub 实时趋势榜]]></content>
       <categories>
-        <category>可以摸鱼的网站</category>
+        <category>《可以摸鱼的网站》 (蒸羊羔)</category>
       </categories>
       <tags>
         <tag>可以摸鱼的网站</tag>
+        <tag>蒸羊羔</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[推荐的开源书籍]]></title>
-    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fopen-source-books%2F</url>
-    <content type="text"><![CDATA[ECMAScript 6 入门在线阅读地址: https://es6.ruanyifeng.com/]]></content>
+    <title><![CDATA[《前端日常学习(刷着玩)的公众号》(蒸鹿尾儿)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0003-mp%2F</url>
+    <content type="text"><![CDATA[奇舞周刊 IVWEB社区 淘宝前端团队]]></content>
       <categories>
-        <category>推荐的开源书籍</category>
+        <category>《前端日常学习(刷着玩)的公众号》(蒸鹿尾儿)</category>
       </categories>
       <tags>
-        <tag>开源书籍</tag>
+        <tag>前端日常学习(刷着玩)的公众号</tag>
+        <tag>蒸鹿尾儿</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[一图胜千言]]></title>
-    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fa-picture-worth-thousand-words%2F</url>
+    <title><![CDATA[《哪里找种子?》(蒸熊掌)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0002-bt%2F</url>
+    <content type="text"><![CDATA[磁力蛙http://ciliwa.in/ BT天堂https://www.bttiantang.la/]]></content>
+      <categories>
+        <category>《哪里找种子?》(蒸熊掌)</category>
+      </categories>
+      <tags>
+        <tag>哪里找种子</tag>
+        <tag>蒸熊掌</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《值得收藏的壁纸》(松花)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0010-wall-page%2F</url>
     <content type="text"><![CDATA[]]></content>
       <categories>
-        <category>一图胜千言</category>
+        <category>《值得收藏的壁纸》(松花)</category>
+      </categories>
+      <tags>
+        <tag>值得收藏的壁纸</tag>
+        <tag>松花</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《推荐的开源书籍》(卤煮咸鸭)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0007-open-source-books%2F</url>
+    <content type="text"><![CDATA[ECMAScript 6 入门在线阅读地址: https://es6.ruanyifeng.com/]]></content>
+      <categories>
+        <category>《推荐的开源书籍》(卤煮咸鸭)</category>
+      </categories>
+      <tags>
+        <tag>推荐的开源书籍</tag>
+        <tag>卤煮咸鸭</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《一眼万年的代码段》(腊肉)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0009-code%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>《一眼万年的代码段》(腊肉)</category>
+      </categories>
+      <tags>
+        <tag>一眼万年的代码段</tag>
+        <tag>腊肉</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《推荐看的电影》(烧雏鸡儿)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0005-recommended-movie%2F</url>
+    <content type="text"><![CDATA[黑客帝国(1999) 豆瓣链接: https://movie.douban.com/subject/1291843/ 资源: https://www.bttiantang.la/movie/16240.html 环形使者(2012) 豆瓣链接: https://movie.douban.com/subject/3179706/ 资源: https://www.bttiantang.la/movie/17348.html]]></content>
+      <categories>
+        <category>《推荐看的电影》(烧雏鸡儿)</category>
+      </categories>
+      <tags>
+        <tag>推荐看的电影</tag>
+        <tag>烧雏鸡儿</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《一图胜千言》(烧花鸭)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0004-a-picture-worth-thousand-words%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>《一图胜千言》(烧花鸭)</category>
       </categories>
       <tags>
         <tag>一图胜千言</tag>
+        <tag>烧花鸭</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[开发开发！神器神器！]]></title>
-    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fdev-artifact%2F</url>
+    <title><![CDATA[《前端大牛》(小肚儿)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0011-daxie%2F</url>
+    <content type="text"><![CDATA[《前端大牛》(小肚儿)]]></content>
+      <categories>
+        <category>《前端大牛》(小肚儿)</category>
+      </categories>
+      <tags>
+        <tag>前端大牛</tag>
+        <tag>小肚儿</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《奇妙的解决方案》(晾肉)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0012-the-best-solution%2F</url>
+    <content type="text"><![CDATA[《奇妙的解决方案》(晾肉)]]></content>
+      <categories>
+        <category>《奇妙的解决方案》(晾肉)</category>
+      </categories>
+      <tags>
+        <tag>奇妙的解决方案</tag>
+        <tag>晾肉</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《开发开发！神器神器！》(烧子鹅)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0006-dev-tools%2F</url>
     <content type="text"><![CDATA[Mac优秀软件推荐 Best-App 经常会有朋友想知道有哪些 Apps 或 服务 是值得付费来使用的，或者有哪些产品是可以提升生活品质的， 于是创建了 BestApp 项目，旨在让推荐变得有章可循 Windows推荐软件 Windows软件推荐 Windows上优质&amp;精选的最佳应用程序及工具列表。 Linux推荐软件生产力提升!Ubuntu16.04LTS软件推荐 美轮美奂的Arch Chrome插件推荐🌈谷粒-Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ Github地址: https://github.com/zhaoolee/ChromeAppHeroes]]></content>
       <categories>
-        <category>开发开发！神器神器！</category>
+        <category>《开发开发！神器神器！》(烧子鹅)</category>
       </categories>
       <tags>
         <tag>开发开发！神器神器！</tag>
+        <tag>烧子鹅</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[好玩的文章]]></title>
-    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2Fnice-article%2F</url>
-    <content type="text"><![CDATA[收录好玩的文章]]></content>
+    <title><![CDATA[《日常斗图用什么？》(酱鸡)]]></title>
+    <url>%2FFrontEndClubIsBook%2F2019%2F07%2F04%2F0008-bqb%2F</url>
+    <content type="text"><![CDATA[https://github.com/zhaoolee/ChineseBQB Chinese sticker pack / 中国的表情包表情包目录(共收录2674张表情包)Emoticon package directory (commonly included 2674 emoticon pack) Example(示例) 链接(Entrance link) 001Funny_滑稽大佬😏BQB(已收录37张) 002CuteGirl_可爱的女孩纸👧BQB(已收录187张) 003CuteBoy_可爱男孩纸👶BQB(已收录28张) 004SmirkBoy_假笑男孩👦BQB(已收录27张) 005ShowerheadBoy_莲蓬头男孩👲BQB(已收录10张) 006Hamster_仓鼠🐹BQB(已收录3张) 007Tiger_胖虎🐯BQB(已收录21张) 008HappyDuck_开心鸭🐥BQB(已收录13张) 009KumamotoBear_熊本熊🐻BQB(已收录31张) 010Cat_猫🐱BQB(已收录75张) 011Dog_狗🐶BQB(已收录47张) 012Parrot_鹦鹉🐦BQB(已收录16张) 013PigPecs_小猪佩奇👑BQB(已收录21张) 014Pig_猪🐖BQB(已收录20张) 015Golden_Curator_Panda金馆长熊猫🐼BQB(已收录218张) 016spray_喷雾🚿BQB(已收录15张) 017Playing_演奏🎻BQB(已收录22张) 018WangEgg_汪蛋🥚BQB(已收录48张) 019Green_Hat绿帽子🖼BQB(已收录23张) 020TATAN🤷‍♂️BQB(已收录31张) 021TongfuInn_同福客栈🏫BQB(已收录105张) 022SuDaqiang_苏大强👴BQB(已收录26张) 023Emoji_BQB(已收录122张) 024Programmer_程序员👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻👩🏻‍💻👨‍💻‍BQB(已收录22张) 025SuperHeroes_超级英雄们👤BQB(已收录10张) 026Chicken_小幺鸡🐔BQB(已收录83张) 027Turtle_乌龟🐢BQB(已收录18张) 028JohnRomero_罗永浩🔨BQB(已收录4张) 029Pigeon_鸽子🕊BQB(已收录10张) 030AntennaBaby_天线宝宝👶BQB(已收录2张) 031Penguin_沙雕企鹅🐧BQB(已收录154张) 032FamousPerson_名人明星BQB(已收录6张) 033Eat_吃🍔BQB(已收录9张) 034WhiteVillain_白色小人👶🏻BQB(已收录839张) 035TomAndJerry_猫和老鼠BQB(已收录319张) 036Pikachu皮卡丘BQB(已收录2张) 微信网友贡献表情包_暂存_有时间慢慢整理BQB(已收录31张) 斗图之王BQB(已收录19张) Data generation time (数据生成时间): 2019-07-06 BQBEND 本项目相关文章(Related introduction) 再好的文案，也干不过这个表情包开源项目！ 科技爱好者周刊：第 63 期 被阮一峰大佬推荐了[开心] 《HelloGitHub》第 39 期 贡献者列表(Contributor List) 🍧 🍰 🍭 🍪 🍫 🍿 The sticker pack is Chinese and the world! 表情包是中国的, 也是世界的! This is a warehouse dedicated to the collection of stickers, all included stickers can be viewed online! 这是一个专门用于收录表情包的仓库, 所有收录的表情包均可在线查看! Welcome to the masters of the fight to contribute stickers, if you can not use git to send the sticker to my mailbox zhaoolee@gmail.com 欢迎斗图高手们贡献表情包, 如果不会使用git可以将表情包发送到我的邮箱 zhaoolee@gmail.com All image index data is automatically generated by the python program, the program is `build.py in the project. 所有图片索引数据由python程序自动生成, 程序为项目中的build.py Sticker package online view entry page: https://zhaoolee.github.io/ChineseBQB/ 表情包在线查看入口页面: https://zhaoolee.github.io/ChineseBQB/ How to get an sticker package? / 如何获取表情包? Get the section with the Chrome extension GitZip for github (Recommended) 借助Chrome扩展程序GitZip for github 获取部分 (推荐) GitZip for github 使用方法: 《GitZip for github》从Github批量下载表情包 GitZip for github How to use: [GitZip for github downloads stickers from Github in bulk] (https://zhaoolee.gitbooks.io/chrome/content/040gitzip-for-github.html) 通过git获取全部表情包 Get all stickers via git 1git clone --depth 1 https://github.com/zhaoolee/ChineseBQB Contribution method / 贡献方法 If you are a Daxie and have a github account, you are welcome to contribute the sticker pack to the root of the https://github.com/zhaoolee/ChineseBQB/tree/master/000Contribution_%E8%B4%A1%E7%8C%AE%F0%9F%87%A8%F0%9F%87%B3 如果你是斗图大佬, 又有github账号, 欢迎将表情包贡献到项目https://github.com/zhaoolee/ChineseBQB根目录下的000Contribution_贡献🇨🇳 If you are a Daxie, don’t have a github account, please send the sticker pack to my email address zhaoolee@gmail.com, letter *Contribute stickers * 如果你是斗图大佬, 没有github账号, 欢迎将表情包发到我的邮箱 zhaoolee@gmail.com , 来信注明 贡献表情包 If you feel that the first two methods are too much trouble, just want to make friends with the author, welcome to add me wechat (WeChat): jianzhao111, after the friend passes, you can send me the sticker package directly~ (Crystal: BQB), After the sticker pack is included, your avatar will appear in the ‘Contributor List’ on the project home page. If you want to sign the project, you can leave a message I want to sign in the project, I will be in the project Your signature~ 如果你感觉前两种方法太麻烦, 只是想和作者交个朋友, 欢迎加我 wechat(微信): jianzhao111 , 好友通过后, 可以直接把表情包发我哦~ (暗号: BQB),表情包被收录后,您的头像将会出现在项目主页中的贡献值列表中, 如果您希望在项目中署名，可以给我留言希望在项目中署名，我会在项目中为您署名~ Handing cola to Daxie / 给大佬递可乐 Giving tea to Daxie / 给大佬端茶 Give a cigarette to Daxie / 给大佬点烟 If you are an sticker author, you can also contact me. This warehouse can help you promote stickers and enhance your visibility. 如果你是表情包作者, 也可以联系我, 这个仓库可以帮你推广表情包, 提升你的知名度 Is this something useful? / 这个东西有啥用么? The sticker pack is the source of happiness! 表情包是快乐之源! 123456789101112131415// The following paragraph from zhihu.com// 下面这段话是我从知乎抄的Remember, when you pass an sticker记住，当你传递一张表情包的时候You are not passing a green stalk你不是在传递一张发绿的老梗You passed你传递的It is the last torch of the classical Internet spirit!是古典互联网精神最后的火炬！]]></content>
       <categories>
-        <category>好玩的文章</category>
+        <category>《日常斗图用什么？》(酱鸡)</category>
       </categories>
       <tags>
-        <tag>好玩的文章</tag>
+        <tag>日常斗图用什么？</tag>
+        <tag>酱鸡</tag>
       </tags>
   </entry>
 </search>

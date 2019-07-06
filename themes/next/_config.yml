@@ -805,13 +805,13 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: EgL5d2IIdfhg4vqfmoUNhvYH-gzGzoHsz #<app_id>
+  app_key: y4xMzOWvLHc0E9IueRNUJxJC #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
+  security: false
   betterPerformance: false
 
 # Another tool to show number of visitors to each article.
@@ -1217,3 +1217,11 @@ images: images
 # 成立时间
 
 since: 2017
+
+
+# 文章置顶设置 top
+
+
+topindex_generator:
+  per_page: 10
+  order_by: -date
