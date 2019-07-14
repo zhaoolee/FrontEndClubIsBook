@@ -9,9 +9,11 @@ categories:
 - 《一图胜千言》(烧花鸭)
 ---
 
+<!-- more -->
+
 # 《一图胜千言》(烧花鸭)
 
-<!-- more -->
+
 
 ![](https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000002/21006465f88c802ccf6d810ed1ed946c.png)
 
