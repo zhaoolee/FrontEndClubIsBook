@@ -9,6 +9,9 @@ categories:
 - 《推荐的开源书籍》(卤煮咸鸭)
 ---
 
+# 《推荐的开源书籍》(卤煮咸鸭)
+
+<!-- more -->
 
 ## ECMAScript 6 入门
 
@@ -16,7 +19,7 @@ categories:
 
 
 
-<!-- more -->
+
 
 
 
