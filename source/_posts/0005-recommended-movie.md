@@ -15,7 +15,6 @@ categories:
 
 <!-- more -->
 
-# 《推荐看的电影》(烧雏鸡儿)
 
 
 豆瓣top250榜单: [https://movie.douban.com/top250](https://movie.douban.com/top250)

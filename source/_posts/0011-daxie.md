@@ -13,7 +13,6 @@ categories:
 
 <!-- more -->
 
-# 《前端大牛》(小肚儿)
 
 
 > ![](https://user-images.githubusercontent.com/15868458/61191570-b61fd200-a6de-11e9-9198-86cee0755c3e.png)
