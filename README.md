@@ -21,5 +21,5 @@
 | 《值得收藏的壁纸》(松花)                   | [链接/Link](https://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0010-wall-page/) | [链接/Link](https://github.com/zhaoolee/FrontEndClubIsBook/tree/master/0010_%E5%80%BC%E5%BE%97%E6%94%B6%E8%97%8F%E7%9A%84%E5%A3%81%E7%BA%B8_%E6%9D%BE%E8%8A%B1) |
 | 《前端大牛》(小肚儿)                       | [链接/Link](https://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0011-daxie/) | [链接/Link](https://github.com/zhaoolee/FrontEndClubIsBook/tree/master/0011_%E5%89%8D%E7%AB%AF%E5%A4%A7%E7%89%9B_%E5%B0%8F%E8%82%9A%E5%84%BF) |
 | 《奇妙的解决方案》(晾肉)                   | [链接/Link](https://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0012-the-best-solution/) | [链接/Link](https://github.com/zhaoolee/FrontEndClubIsBook/tree/master/0012_%E5%A5%87%E5%A6%99%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_%E6%99%BE%E8%82%89)                                              |
-| …(香肠)                                    |                                                              |                                                              |
+| 《Marvel漫威宇宙》(香肠)  |         |                                                              |
 
