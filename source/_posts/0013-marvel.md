@@ -12,3 +12,6 @@ categories:
 ------
 
 <!-- more -->
+
+
+- 主要贡献者: [ChanClay](https://github.com/ChanClay)

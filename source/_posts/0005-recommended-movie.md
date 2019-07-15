@@ -15,10 +15,9 @@ categories:
 
 <!-- more -->
 
-
+- 主要贡献者: [Linjiahua](https://github.com/Linjiahua)
 
 豆瓣top250榜单: [https://movie.douban.com/top250](https://movie.douban.com/top250)
-
 
 
 ## 黑客帝国(1999)
