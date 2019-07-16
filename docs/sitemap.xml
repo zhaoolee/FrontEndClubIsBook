@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0003-stars_and_clown/</loc>
+    
+    <lastmod>2019-07-16T12:55:09.746Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0008-bqb/</loc>
     
     <lastmod>2019-07-16T12:48:55.344Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0006-chrome_app_heroes/</loc>
     
     <lastmod>2019-07-16T12:48:07.964Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0003-star_and_clown/</loc>
-    
-    <lastmod>2019-07-16T12:46:46.700Z</lastmod>
     
   </url>
   
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/tags/index.html</loc>
+    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/categories/index.html</loc>
     
     <lastmod>2019-07-06T02:41:46.681Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/categories/index.html</loc>
+    <loc>http://zhaoolee.github.io/FrontEndClubIsBook/tags/index.html</loc>
     
     <lastmod>2019-07-06T02:41:46.681Z</lastmod>
     
