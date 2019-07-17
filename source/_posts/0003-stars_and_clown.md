@@ -23,6 +23,7 @@ categories:
 
 **Github有哪些沙雕库? 有哪些吃瓜群众也能玩的嗨的库? 在这里,你将找到满意的答案[手动滑稽]**
 
+
 **项目地址**: https://github.com/zhaoolee/StarsAndClown
 **在线阅读**: https://zhaoolee.gitbooks.io/starsandclown/content/
 > ![](https://raw.githubusercontent.com/zhaoolee/GraphBed/master/images/6279c4323e2a83a651fc823f3e9a4dc1.png)
@@ -468,3 +469,16 @@ ChromeAppHeroes, Write a Chinese manual for the excellent Chrome plugin, let the
 - **Github星聚弃疗榜**, 为Github优秀创意项目写一封推荐信，让Github优秀项目造福人类~, 如果你喜欢这个项目, 希望你能为本项目添加一颗 🌟星.
 
 - StarsAndClown, Write a letter of recommendation for Github's outstanding creative projects, and let Github's outstanding projects benefit mankind~, If you like this project, I hope you can add a star 🌟 to this project.
+
+
+
+## 欢迎赞助本项目(微信赞赏)
+
+- 收到的赞助, 未来将用于购买服务器, 存放本项目的资源
+
+- 通过赞赏请作者喝杯咖啡,也是可以的~
+
+- 赞助越多,内容更新的越快越好[手动滑稽]
+
+![](https://raw.githubusercontent.com/zhaoolee/GraphBed/master/zhaoolee_images000002/ba5b30723b85810c5a8a42be8ead4161.jpeg)
+.

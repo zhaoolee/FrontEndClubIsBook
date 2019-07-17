@@ -8,13 +8,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "hexo server -p 5000",
-    "build": "hexo clean && hexo g",
-    "push": "hexo clean && hexo g && git add . && git commit -m 'zhaoolee commit' && git push && echo 'open https://zhaoolee.github.io/FrontEndClubIsBook/' ",
+    "build": "node get_data.js && hexo clean && hexo g",
+    "push": "node get_data.js && hexo clean && hexo g && git add . && git commit -m 'zhaoolee commit' && git push && echo 'open https://zhaoolee.github.io/FrontEndClubIsBook/' ",
     "clean": "hexo clean",
     "start": "hexo server",
     "new": "hexo new post article-$(date '+%Y-%m-%d-%H-%M-%S')"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "hexo": "^3.9.0",
     "hexo-generator-archive": "^0.1.5",
     "hexo-generator-baidu-sitemap": "^0.1.6",
