@@ -1,11 +1,12 @@
 # FrontEndClubIsBook
-前端娱乐圈是本书!  The front end entertainment circle is the book!
 
-这是一个有趣的开源仓库, 是前端娱乐方向的百科全书~
+前端娱乐圈是本书!  The front end entertainment circle is the book! [在线查看地址](https://zhaoolee.github.io/FrontEndClubIsBook/)
 
-兴趣是最好的老师, 所以本仓库收录的内容, 都是有趣的内容~
+- 这是一个有趣的开源仓库, 是**前端娱乐方向**的百科全书~
 
-如果有你想为本书的相关专题提供资源, 可以将资源提交到项目一级目录下的相关文件夹,详情见[目录](https://github.com/zhaoolee/FrontEndClubIsBook#目录)中的 `贡献提交位置`
+- 兴趣是最好的老师, 所以本仓库收录的内容, 都是有趣的内容~
+
+- 如果有你想为本书的相关专题提供资源, 可以将资源提交到项目一级目录下的相关文件夹,详情见[目录](https://github.com/zhaoolee/FrontEndClubIsBook#目录)中的 `贡献提交位置`
 
 
 
@@ -30,3 +31,12 @@
 | [0012《奇妙的彩蛋》(晾肉)](https://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0012-egg/) | [晾肉](https://github.com/zhaoolee/FrontEndClubIsBook/tree/master/0012_%E5%A5%87%E5%A6%99%E7%9A%84%E5%BD%A9%E8%9B%8B_%E6%99%BE%E8%82%89)                                              |   <img height='100px' style='height:100px;' src='https://user-images.githubusercontent.com/15868458/61338680-3e33e200-a86d-11e9-8a10-911a9e3667fa.gif' />  |
 | [0013《Marvel漫威宇宙》(香肠)](https://zhaoolee.github.io/FrontEndClubIsBook/2019/07/06/0013-marvel/)      |  [香肠](https://github.com/zhaoolee/FrontEndClubIsBook/tree/master/0013_Marvel%E6%BC%AB%E5%A8%81%E5%AE%87%E5%AE%99_%E9%A6%99%E8%82%A0)                                                        |   <img height='100px' style='height:100px;' src='https://user-images.githubusercontent.com/15868458/61338595-ec8b5780-a86c-11e9-8160-26c45091e3b8.jpg' />  |
 
+
+
+## 本书的公开情报
+
+- 本书所有内容均可在线查看: [前端娱乐圈是本书](https://zhaoolee.github.io/FrontEndClubIsBook/) 
+
+- 本书每一个专题对应一个菜名, 菜名与作者个人气质息息相关
+
+> ![](https://user-images.githubusercontent.com/15868458/61340218-f5335c00-a873-11e9-9d25-315ac5fa228e.png)
