@@ -1,6 +1,11 @@
 # FrontEndClubIsBook
 
-前端娱乐圈是本书!  The front end entertainment circle is the book! [在线查看地址](https://zhaoolee.github.io/FrontEndClubIsBook/)
+前端娱乐圈是本书!  The front end entertainment circle is the book! 
+
+| 浏览方式 | 链接 |
+| --- | --- |
+| 在线网页查看 | [在线查看地址](https://zhaoolee.github.io/FrontEndClubIsBook/) |
+| Github仓库查看 |  [Github开源地址]((https://github.com/zhaoolee/FrontEndClubIsBook)) |
 
 - 这是一个有趣的开源仓库, 是**前端娱乐方向**的百科全书~
 
@@ -35,8 +40,10 @@
 
 ## 本书的公开情报
 
-- 本书所有内容均可在线查看: [前端娱乐圈是本书](https://zhaoolee.github.io/FrontEndClubIsBook/) 
+- 本书在线查看地址: [前端娱乐圈是本书](https://zhaoolee.github.io/FrontEndClubIsBook/) 
 
 - 本书每一个专题对应一个菜名, 菜名与作者个人气质息息相关
 
 > ![](https://user-images.githubusercontent.com/15868458/61340218-f5335c00-a873-11e9-9d25-315ac5fa228e.png)
+
+- 本书欢迎新作者加入,对本书编写有好想法的的可以在[本仓库的issues](https://github.com/zhaoolee/FrontEndClubIsBook/issues)页面留言, 也可以通过 zhaoolee@gmail.com 联系zhaoolee
