@@ -4,8 +4,8 @@
 
 | 浏览方式 | 链接 |
 | --- | --- |
-| 在线网页查看 | [在线查看地址](https://zhaoolee.github.io/FrontEndClubIsBook/) |
-| Github查看 |  [Github开源地址]((https://github.com/zhaoolee/FrontEndClubIsBook)) |
+| 网页查看(推荐) | [在线查看地址](https://zhaoolee.github.io/FrontEndClubIsBook/) |
+| Github查看 |  [Github开源地址](https://github.com/zhaoolee/FrontEndClubIsBook) |
 
 - 这是一个有趣的开源仓库, 是**前端娱乐方向**的百科全书~
 
