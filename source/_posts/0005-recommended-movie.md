@@ -53,7 +53,7 @@ categories:
 ## 海边的曼彻斯特(2016)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p2496940327.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p2496940327.jpg?raw=true)
 
 
 
@@ -69,7 +69,7 @@ categories:
 ## 猫鼠游戏(2002)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p453924541.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p453924541.jpg?raw=true)
 
 
 
@@ -84,7 +84,7 @@ categories:
 
 ## 拯救大兵瑞恩(1998)
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p1014542496.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p1014542496.jpg?raw=true)
 
 
 
@@ -100,7 +100,7 @@ categories:
 ## 肖申克的救赎(1994)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p480747492.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p480747492.jpg?raw=true)
 
 
 
@@ -116,7 +116,7 @@ categories:
 ## 三傻大闹宝莱坞(2009)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p579729551.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p579729551.jpg?raw=true)
 
 
 
@@ -132,7 +132,7 @@ categories:
 ## 飞屋环游记(2009)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p2553594918.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p2553594918.jpg?raw=true)
 
 
 
@@ -148,7 +148,7 @@ categories:
 ## 看不见的客人(2016)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p2449229311.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p2449229311.jpg?raw=true)
 
 
 
@@ -164,7 +164,7 @@ categories:
 ## 美丽心灵(2001)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p1665997400.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p1665997400.jpg?raw=true)
 
 
 
@@ -180,7 +180,7 @@ categories:
 ## V字仇杀队(2001)
 
 
-![](https://github.com/Linjiahua/my_images/blob/master/images/p1465235231.jpg)
+![](https://github.com/Linjiahua/my_images/blob/master/images/p1465235231.jpg?raw=true)
 
 
 
