@@ -28,7 +28,7 @@ categories:
 
 豆瓣链接: [https://movie.douban.com/subject/1291843/](https://movie.douban.com/subject/1291843/)
 
-资源: <https://www.bttiantang.la/movie/16240.html>
+资源: <https://www.bttiantangok.com/movie/16240.html>
 
 
 
@@ -44,7 +44,7 @@ categories:
 
 豆瓣链接: https://movie.douban.com/subject/3179706/
 
-资源: <https://www.bttiantang.la/movie/17348.html>
+资源: <https://www.bttiantangok.com/movie/17348.html>
 
 
 

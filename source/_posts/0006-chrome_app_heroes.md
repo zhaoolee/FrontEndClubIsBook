@@ -40,7 +40,9 @@ ChromeAppHeroes, Write a Chinese manual for the excellent Chrome plugin, let the
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) ![https://img.shields.io/github/issues/zhaoolee/ChromeAppHeroes.svg?style=popout-square](https://img.shields.io/github/issues/zhaoolee/ChromeAppHeroes.svg?style=popout-square) ![https://img.shields.io/github/stars/zhaoolee/ChromeAppHeroes.svg?style=popout-square](https://img.shields.io/github/stars/zhaoolee/ChromeAppHeroes.svg?style=popout-square)
 
 
-## 目录(2019年7月13日更新)
+## 目录(2019年7月22日更新)
+
+- [053《鼠标点击特效 (๑•́ ∀ •̀๑)》为鼠标点击添加有趣的特效](https://zhaoolee.gitbooks.io/chrome/content/053300a-shu-biao-dian-ji-te-xiao-2022-0300-0e5129-300b-wei-shu-biao-dian-ji-tian-jia-you-qu-de-te-xiao.html)
 
 - [052《Site Palette》自动提取网站配色](https://zhaoolee.gitbooks.io/chrome/content/052site-palette.html)
 
@@ -195,6 +197,14 @@ ChromeAppHeroes, Write a Chinese manual for the excellent Chrome plugin, let the
 
 **感谢以上赞赏者对本开源项目的支持[手动滑稽]**
 
+
+#### [053《鼠标点击特效 (๑•́ ∀ •̀๑)》为鼠标点击添加有趣的特效](https://zhaoolee.gitbooks.io/chrome/content/053300a-shu-biao-dian-ji-te-xiao-2022-0300-0e5129-300b-wei-shu-biao-dian-ji-tian-jia-you-qu-de-te-xiao.html)
+
+
+![](https://user-images.githubusercontent.com/15868458/61600040-04921b00-ac61-11e9-8446-533752d71de1.gif)
+
+
+《鼠标点击特效 (๑•́ ∀ •̀๑)》是一款为鼠标点击添加有趣的特效的扩展程序,虽然没啥实际用途,但很好玩, 录制一些有趣的网页小程序时, 会非常出彩~
 
 #### [052《Site Palette》自动提取网站配色](https://zhaoolee.gitbooks.io/chrome/content/052site-palette.html)
 
